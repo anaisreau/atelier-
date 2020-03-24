@@ -1,0 +1,28 @@
+class Vehicle{
+    constructor(color, name){
+        this.color = color;
+        this.name = name;
+}
+
+sayVehicle(){
+    console.log(`Car's color is ${this.color} , car's name is ${this.name}`);
+}
+sayMoto(){
+    console.log(type === 'moto'? 'this is a moto':'this is a car');
+}
+}
+
+const suzuki = new Vehicle ('orange', 'suzuki')
+suzuki.sayVehicle();
+
+
+class type extends Vehicle{
+    constructor(color, name, type){
+    super(color, name);
+    this.type = type;
+}
+}
+
+const clio = new Vehicle('white', 'renault','car')
+clio.sayMoto();
+
